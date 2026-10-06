@@ -1,0 +1,129 @@
+.App {
+  min-height: 100vh;
+  padding-top: 45px;
+
+  background-color: #f3ede1;
+
+  text-align: center;
+  color: #26352c;
+}
+
+.Header {
+  display: inline-block;
+
+  margin-bottom: 24px;
+  padding-bottom: 7px;
+
+  font-size: 1.45rem;
+  font-weight: 600;
+
+  border-bottom: 2px solid #9bb49f;
+}
+
+.Calculator {
+  width: 520px;
+  margin: 0 auto;
+  padding: 20px;
+
+  background-color: #faf7ef;
+
+  border: 2px solid #9bb49f;
+  border-radius: 12px;
+}
+
+.Display {
+  height: 82px;
+  padding: 12px 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  background-color: #506b5a;
+  color: #fffaf0;
+
+  border: 2px solid #435d4c;
+  border-radius: 8px;
+
+  font-size: 2.4rem;
+  font-weight: 500;
+
+  text-align: right;
+  overflow: hidden;
+}
+
+.Keypad {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 11px;
+
+  margin-top: 14px;
+}
+
+.Button {
+  height: 64px;
+
+  border: 1px solid #cbd4c9;
+  border-radius: 7px;
+
+  background-color: #f6f1e7;
+  color: #26352c;
+
+  font-size: 1.5rem;
+  font-weight: 500;
+
+  transition:
+    background-color 0.15s ease,
+    border-color 0.15s ease;
+}
+
+.Button:hover {
+  background-color: #ebe5d9;
+  border-color: #b9c7b9;
+}
+
+.Button:active {
+  background-color: #ded8cc;
+}
+
+.OperatorButton {
+  background-color: #e6ede4;
+  border-color: #bdcdbc;
+}
+
+.OperatorButton:hover {
+  background-color: #dbe5d9;
+}
+
+.OperatorButton:active {
+  background-color: #cedbcf;
+}
+
+.ClearButton {
+  background-color: #d8e4d8;
+  border-color: #afc3b0;
+}
+
+.ClearButton:hover {
+  background-color: #cbdccf;
+}
+
+.ClearButton:active {
+  background-color: #bdcfbf;
+}
+
+.EqualsButton {
+  background-color: #7d9d84;
+  color: #fffaf0;
+
+  border-color: #6f9077;
+}
+
+.EqualsButton:hover {
+  background-color: #6f8f76;
+  border-color: #638269;
+}
+
+.EqualsButton:active {
+  background-color: #607d67;
+}
