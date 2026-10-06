@@ -130,7 +130,7 @@
   transform: translateY(1px);
 }
 
-/* Operator Buttons */
+/* Operators */
 
 .OperatorButton {
   background: linear-gradient(145deg, #e7efe5, #dce7db);
@@ -165,25 +165,8 @@
 
   border-color: #aec3b0;
 
-  color: transparent !important;
-  font-size: 0 !important;
-
-  font-weight: 600;
-
-  position: relative;
-}
-
-.ClearButton::after {
-  content: "C";
-
-  position: absolute;
-  top: 50%;
-  left: 50%;
-
-  transform: translate(-50%, -50%);
-
   color: #344d3b;
-  font-size: 1.5rem;
+
   font-weight: 600;
 }
 
@@ -239,7 +222,7 @@
   transform: translateY(1px);
 }
 
-/* Responsive Design */
+/* Smaller screens */
 
 @media (max-width: 600px) {
   .App {
@@ -263,10 +246,6 @@
 
   .Button {
     height: 58px;
-    font-size: 1.3rem;
-  }
-
-  .ClearButton::after {
     font-size: 1.3rem;
   }
 
