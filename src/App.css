@@ -11,7 +11,6 @@
   color: #26352c;
 }
 
-
 /* Title */
 
 .Header {
@@ -131,7 +130,7 @@
   transform: translateY(1px);
 }
 
-/* Operators */
+/* Operator Buttons */
 
 .OperatorButton {
   background: linear-gradient(145deg, #e7efe5, #dce7db);
@@ -168,7 +167,13 @@
 
   color: #344d3b;
 
+  font-size: 0;
   font-weight: 600;
+}
+
+.ClearButton::after {
+  content: "C";
+  font-size: 1.5rem;
 }
 
 .ClearButton:hover {
@@ -223,7 +228,7 @@
   transform: translateY(1px);
 }
 
-/* Smaller screens */
+/* Responsive Design */
 
 @media (max-width: 600px) {
   .App {
@@ -247,6 +252,10 @@
 
   .Button {
     height: 58px;
+    font-size: 1.3rem;
+  }
+
+  .ClearButton::after {
     font-size: 1.3rem;
   }
 
